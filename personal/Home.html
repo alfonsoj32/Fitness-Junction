@@ -11,41 +11,58 @@
 <div id="content">
     <header>
         <a id="logo_link" href="Home.html">
-            <img class ="logo" src="images/fitness_logo.png" alt="Fitness Junction logo" />
+          <img class ="logo" src="images/fitness_logo.png" alt="Fitness Junction logo"/>
         </a>
         <nav>
             <a href="Home.html">Home</a>
             <a href="Fitness.html">Fitness</a>
-            <a href="Resources.html">Resources</a>
-            <a href="site-plan.html">Site Plan</a>
+            <a href="Resources.html">About Us</a>
             <a href="Contact.html">Contact Us</a>
         </nav>
-    </header>
-    <div id="main">
-        <div id="main-box">
-            <img id="main-img" src="images/homepage.jpg" alt="Homepage Image">
-        </div>
-        <section id="main-msg">
-            <h1 class="main-title">Fitness Junction:</h1>
-            <h4>Where Your Fitness Goals Meet Success. </h4>
-            <div class='button-box'>
-                <a class='book' href="contactus.html">Join us</a>
+        <div id="hero" class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/homepage2.png" alt="slideshow">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="images/homepage3.jpg" alt="slideshow">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/homepage4.jpg" alt="slideshow">
+          </div>
+          <section id="hero-msg">
+            <h1 class="home-title">Where Your Fitness Goals Meet Success.</h1>
+            <div class="button-box">
+              <a class="join" href="Contact.html">Join Us!</a>
             </div>
+          </section>
+        </div>
+    </header>
+    <main>
+      <div class="home-grid">
+        <section class="gym-card">
+            <h2>Work Out</h2>
+            <img class="card-img" src="images/homepage.jpg" alt="river in forest">
         </section>
-    </div>
-    <main class="home-grid">
-        <div id="background"></div>
-        <img>
+        <section class="gym-card">
+            <h2>Gym</h2>
+            <img class="card-img" src="images/homepage1.jpg" alt="tent in mountains">
+        </section>
+      </div>
+      <div class="msg-container">
         <section class="msg">
-            <h2>Know more about Fitness Junction!</h2>
-            <p>You can learn more by clicking the link below.</p>
-            <a class='join' href="Fitness.html">Fitness</a>
+          <p>Fitness Junction is a website that caters to all your fitness needs. Our all-in-one platform provides personalized 
+            workout plans, expert guidance, and a supportive community to keep you motivated. Whether you're a beginner or an 
+            experienced athlete, Fitness Junction is here to help you meet your goals and achieve success. With easy access anytime, 
+            anywhere, you can access a wide range of resources, tools, and techniques to teach you how to be healthy.
+          </p>
         </section>
+      </div>  
     </main>
     <footer>
         <p>Fitness Junction &copy; 2023 - Alfonso Tumbokon</p>
         <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactus.html">Contact Us</a></p>
+        <p><a href="Contact.html">Contact Us</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
@@ -59,5 +76,24 @@
         </div>
     </footer>
 </div>
+<script>
+    
+    var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var slides = document.getElementsByClassName("mySlides");
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 10000);
+  }
+  
+</script>
 </body>
 </html>

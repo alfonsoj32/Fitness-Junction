@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Caveat&family=Indie+Flower&family=Nanum+Brush+Script&family=Permanent+Marker&family=Righteous&display=swap');
+/* :root{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} */
+
+body{
+    font-size: 22px;
+    background-color:#eadeda ;
+    font-family: Permanent Marker, Righteous, Bruno Ace Marker;
+    margin: 0;
+    padding: 0;
+}
+.slideshow-container {
+    width: 100%;
+    margin: auto;
+    background-color: #eadeda;
+    position: relative;
+}
+  
+.mySlides {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+  
+.mySlides.fade {
+    animation: fadeAnimation 5s infinite;
+}
+  
+@keyframes fadeAnimation {
+    0%, 100% {
+      opacity: 0;
+    }
+    20%, 80% {
+      opacity: 1;
+    }
+}
+nav a{
+    text-align: center;
+    color: #c58c30 ;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 30px;
+}
+#hero-msg {
+    position: absolute;
+    top: 100px;
+    left: 440px;
+    color: #c58c30 ;
+}
+#hero-msg h1 {
+    text-align: center;
+}
+#hero img {
+    width: 100%;
+}
+.button-box{
+    text-align: center;
+}
+header{
+    background-color: #706c61;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 150px auto;
+}
+nav a:hover {
+    color: #1C1D21;
+    border-radius: 15px;
+}
+.book, .join{
+    background-color:#00a329;
+    color: #1C1D21;
+    text-decoration: none;
+    font-family: Permanent Marker, Righteous, Bruno Ace Marker;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book:hover, .join:hover{
+    color: #BF6900;
+}
+div{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color:#706c61 ;
+    color: #c58c30;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p{
+    color: #c58c30;
+    font-size: 1.2em;
+    padding: 2%;
+}
+footer p a {
+    text-decoration: none;
+    color: #c58c30;
+}
+footer p a:hover {
+    color: #1C1D21;;
+}
+footer .social img{
+    padding-top: 15px;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo{
+    width: 100px;
+    margin-top: 10px;
+}
+#main-img {
+    width: 100%;
+}
+.card-img{
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    height: 500px;
+    width: 500px;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.gym-card h2 {
+    text-align: center;
+}
+.home-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#background {
+    display: none;
+}
+.msg{
+    width: 1000px;
+    text-align: center;
+}
+.msg p {
+    font-family: Nanum Brush Script, Caveat, Indie Flower;
+}
+.msg-container {
+    justify-content: center;
+    display: flex;
+}
+.Fitness-card {
+    padding-top: 100px;
+}
+.Fitness-card img{
+    width: 350px;
+    height: 350px;
+}
+.resources {
+    flex-direction: column;
+    margin-top: 50px;
+}
+/*  */
